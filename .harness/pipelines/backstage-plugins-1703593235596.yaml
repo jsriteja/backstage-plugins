@@ -38,10 +38,18 @@ pipeline:
                     command: npm run lint
                   timeout: ""
                   type: Run
+              - step:
+                  type: Run
+                  name: Run_4
+                  identifier: Run_4
+                  spec:
+                    shell: Sh
+                    command: echo "hello world"
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
+        description: ""
